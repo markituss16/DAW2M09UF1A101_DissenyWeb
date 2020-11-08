@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fons{
+    background: linear-gradient(rgba(0,0,0,0.5),#575656),url("/IMATGES/fons_index.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+    width: 70px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.text_banner{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+
+.text_banner h1{
+    font-size: 80px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.text_banner p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.text_titol{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+/********VIDEO********/
+iframe{
+    width: 560px;
+    height: 315px;
+    position: absolute;
+    left: 31%;
+    top: 45%;
+    border-radius: 20px;
+}
+
+/***********************************************/
+
+#caract{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.text_titol p{
+    margin: auto;
+    font-size: 20px;
+    color: #5c5c5c;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.text_titol p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#5c5c5c,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.text_titol h1{
+    font-size: 50px;
+    font-family: 'Itim', cursive;
+}
+
+.caixa_caract{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
+.caracts{
+    flex-basis: 50%;
+}
+
+.caracts-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.caracts-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.caracts h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #5c5c5c;
+    padding-left: 20px;
+    text-shadow: 2px 2px 8px grey;
+    text-decoration: none;
+}
+
+.caracts-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.caracts-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+/*****************MARCADORS******************/
+nav{
+    position: absolute;
+    top: 12%;
+    right: 0;
+    left: 60%;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+nav a{
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+nav a:before, nav a:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+nav a:after{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+nav a:nth-child(1):before{
+    background-color: yellow;
+}
+
+nav a:nth-child(1):after{
+    background-color: red;
+}
+
+nav a:nth-child(2):before{
+    background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after{
+    background-color: #89ff00;
+}
+
+nav a:nth-child(3):before{
+    background-color: purple;
+}
+
+nav a:nth-child(3):after{
+    background-color: palevioletred;
+}
+
+#indicador{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav a:hover{color: #fff;}
+
+nav a:hover:before, nav a:hover:after{
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicador{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicador{
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicador{
+    left: 70%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+
+/***********CONTACTE************/
+.contacta{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.subtit_contacta{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container{
+    width: 450px;
+    margin: auto;
+    background: rgb(209, 66, 66);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.inp_cont, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.inp_cont:hover, textarea:hover{
+    background-color: #b9b8b8;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff; 
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+input[class="inp_cont"] {
+    background-color: rgb(233, 231, 231);
+}
+
+/******************NOSALTRES******************/
+.nosaltres h1 {
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #fff;
+    padding-top: 8%;
+}
+
+.equip {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.equip .membre_equip {
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.equip .membre_equip h3 {
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.equip .membre_equip p.rols {
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.equip .membre_equip .img_equip {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.equip .membre_equip .img_equip img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+/*****************FOOTER*****************/
+.footer-main-div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+
+#text-footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}

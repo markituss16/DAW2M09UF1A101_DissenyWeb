@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Contacte</title>
+  <link href="/CSS/index.css" rel="stylesheet" type="text/css" />
+  <link href="/FONTS/fonts.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+      <a class="active" href="index.html">INICI</a>
+      <a href="contacte.html">CONTACTE</a>
+      <a href="nosaltres.html">NOSALTRES</a>
+      <div id="indicador"></div>
+    </nav>
+
+    <section id="fons">
+        <img src="/IMATGES/logo.png" class="logo">
+        <div class="contacta">
+          <h1>Contacta'ns !</h1>
+        </div>
+        <div class="subtit_contacta">
+          <h4>Si hi estàs interessat, no dubtis en posar-te en contacte a
+            través d'aquest formulari.
+          </h4>
+        </div>
+        <div class="container">
+          <form action="#" name="formulari_contacte">
+            <label for="nom">Nom</label>
+            <input class="inp_cont" name="nom" type="text" required placeholder="El teu nom...">
+            <br>
+            <label for="cognom">Cognom</label>
+            <input class="inp_cont" name="cognom" type="text" required placeholder="El teu cognom..."/>
+            <br>
+            <label for="email">Email</label>
+            <input class="inp_cont" name="email" type="email" required placeholder="xyz@domini.com"/>
+            <br>
+            <label for="missatge">Missatge</label><br>
+            <textarea name="missatge" cols="30" rows="10" placeholder="Explica la teva comanda"></textarea>
+            <div class="center">
+              <input class="inp_cont" type="button" value="ENVIAR" id="boton">
+            </div>
+          </form>
+        </div>
+    </section>
