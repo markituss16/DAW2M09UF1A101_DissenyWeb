@@ -12,7 +12,7 @@
 
 .logo{
     width: 70px;
-    position: absolute;
+    position: fixed;
     top: 4%;
     left: 10%;
 }
@@ -24,7 +24,7 @@
 }
 
 .text_banner h1{
-    font-size: 80px;
+    font-size: 70px;
     font-family: 'Syne Mono', monospace;
 }
 
@@ -39,7 +39,7 @@
 }
 
 /********VIDEO********/
-iframe{
+#video{
     width: 560px;
     height: 315px;
     position: absolute;
@@ -48,7 +48,7 @@ iframe{
     border-radius: 20px;
 }
 
-/***********************************************/
+/***********************CARACTS************************/
 
 #caract{
     width: 100%;
@@ -129,12 +129,50 @@ iframe{
     text-align: initial;
 }
 
+/*****************OPINIONS*******************/
+#opinions{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.fila-opinions{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-opinions{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+}
+
+.col-opinions p{
+    font-size: 14px;
+}
+
+h4 + p { /*Selector adjacent*/
+    color: rgb(37, 88, 163);
+    font-size: smaller;
+}
+
+#xarxa {
+    font-weight: bold;
+}
+
 /*****************MARCADORS******************/
 nav{
     position: absolute;
     top: 12%;
     right: 0;
-    left: 60%;
+    left: 55%;
     width: 319px;
     display: table;
     margin: 0 auto;
@@ -200,6 +238,14 @@ nav a:nth-child(3):after{
     background-color: palevioletred;
 }
 
+nav a:nth-child(4):before{
+    background-color: #06c506;
+}
+
+nav a:nth-child(4):after{
+    background-color: gray;
+}
+
 #indicador{
     position: absolute;
     left: 5%;
@@ -227,8 +273,13 @@ nav a:nth-child(2):hover ~ #indicador{
 }
 
 nav a:nth-child(3):hover ~ #indicador{
-    left: 70%;
+    left: 65%;
     background: linear-gradient(130deg, purple, palevioletred);
+}
+
+nav a:nth-child(4):hover ~ #indicador{
+    left: 90%;
+    background: linear-gradient(130deg, #06c506, grey);
 }
 
 /***********CONTACTE************/
@@ -253,7 +304,7 @@ nav a:nth-child(3):hover ~ #indicador{
 .container{
     width: 450px;
     margin: auto;
-    background: rgb(209, 66, 66);
+    background: rgb(240, 115, 32);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -280,7 +331,7 @@ textarea {
 }
 
 #boton {
-    background: #31384A;
+    background: #000000;
     color: #fff; 
     padding: 20px;
 }
@@ -366,4 +417,62 @@ input[class="inp_cont"] {
     font-size: 20px;
     text-align: center;
     color: #fff;
+}
+
+/****************ESTILS**************************/
+#pdf{
+    position: absolute;
+    left:40%;
+    top:25%;
+}
+
+.colum-pdf{ 
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 11%;
+}
+
+#titol-pdf{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(77, 77, 83);
+}
+
+#text-pdf{
+    padding: 10px 10px 0 10px;
+    text-align: justify;
+}
+
+/* TRANSICIONS */
+.transition{
+	margin:0 auto;
+	border:1px solid #CCC;
+	
+/* PROPIETATS AFECTADES */
+	height:510px;
+	width:250px;
+    background-color:white;
+    
+   transition-property: width, height, background-color; 
+   transition-duration: 0.5s, 1s, 1s; 
+   transition-timing-function: ease, ease-out, ease;
+   transition-delay:0s ,0.5s, 1.5s;
+    
+   -webkit-transition-property: width, height, background-color; 
+   -webkit-transition-duration: 0.5s, 1s, 1s; 
+   -webkit-transition-timing-function: ease, ease-out, ease;
+   -webkit-transition-delay:0s ,0.5s, 1.5s;
+
+   -o-transition-property: width, height, background-color; 
+   -o-transition-duration: 0.5s, 1s, 1s; 
+   -o-transition-timing-function: ease, ease-out, ease;
+   -o-transition-delay:0s ,0.5s, 1.5s;
+}
+ 
+.transition:hover{
+    height:340px;
+    width:400px;
+    background-color:#fff;
 }
