@@ -7,7 +7,7 @@
     background: linear-gradient(rgba(0,0,0,0.5),#575656),url("/IMATGES/fons_index.jpg");
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
 }
 
 .logo{
@@ -91,7 +91,7 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    font-family: 'Itim', cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .caracts{
@@ -131,7 +131,9 @@
 
 /*****************OPINIONS*******************/
 #opinions{
+    margin-top: 25px;
     width: 100%;
+    height: 100%;
     padding: 70px 0;
     background: #efefef;
 }
@@ -156,6 +158,7 @@
 
 .col-opinions p{
     font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 h4 + p { /*Selector adjacent*/
